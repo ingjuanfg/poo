@@ -1,6 +1,6 @@
-package com.ingjuanfg.herencia;
+package com.ingjuanfg.clase_abstracta;
 
-public class Persona {
+public abstract class Persona {
     private String cedula;
     private String nombre;
     private String apellido;
@@ -12,8 +12,6 @@ public class Persona {
         this.apellido = apellido;
         this.edad = edad;
     }
-
-    public Persona(){}
 
     public String getCedula() {
         return cedula;
@@ -55,7 +53,5 @@ public class Persona {
         System.out.println("Realizar examen CLASE PADRE");
     }
 
-    public void conducir(){
-        System.out.println("Conducir un vehiculo CLASE PADRE");
-    }
+    public abstract void conducir();
 }

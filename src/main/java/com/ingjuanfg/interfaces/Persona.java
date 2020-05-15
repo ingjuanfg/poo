@@ -1,6 +1,6 @@
-package com.ingjuanfg.herencia;
+package com.ingjuanfg.interfaces;
 
-public class Persona {
+public abstract class Persona implements GrupoHospitalario {
     private String cedula;
     private String nombre;
     private String apellido;
@@ -57,5 +57,9 @@ public class Persona {
 
     public void conducir(){
         System.out.println("Conducir un vehiculo CLASE PADRE");
+    }
+
+    public void ingresoCentroHospitalario(){
+        System.out.println("Solicitud ingreso con Carnet");
     }
 }

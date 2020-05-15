@@ -1,4 +1,4 @@
-package com.ingjuanfg.herencia;
+package com.ingjuanfg.clase_abstracta;
 
 import java.util.ArrayList;
 import java.util.HashMap;

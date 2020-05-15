@@ -1,4 +1,4 @@
-package com.ingjuanfg.herencia;
+package com.ingjuanfg.interfaces;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,8 +34,14 @@ public class Main {
         System.out.println("INFORMACION DE LOS CIUDADANOS");
         for(Persona ciudadano : ciudadanos){
             System.out.println(ciudadano.getNombre() + " -- " + ciudadano.getApellido());
-            ciudadano.realizarExamen();
             ciudadano.conducir();
+            ciudadano.ingresoCentroHospitalario();
+        }
+
+        System.out.println("ACCIONES DE LOS CIUDADANOS");
+        for(Persona ciudadano : ciudadanos){
+            System.out.println(ciudadano.getNombre() + " -- " + ciudadano.getApellido());
+            ciudadano.realizarExamen();
             ciudadano.solicitarCitaMedica();
         }
     }
